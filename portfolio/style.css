@@ -1,0 +1,122 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #F2D3D0;
+}
+.container {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 220px;
+    grid-template-rows: 90px 1fr 55px 6px;
+    grid-template-areas: 
+        'header header header'
+        'aside main main'
+        'footer footer footer';
+    height: 100vh;
+}
+.container > * {
+    padding: 1rem;
+    border-radius: 10px; 
+    color: #8C6C65;
+    background-color: #0D0D0D;
+}
+header {
+    display: flex;
+    grid-area: header;
+    height: 93px;
+}
+main {
+    grid-area: main;
+    margin-top: 35px;
+}
+aside {
+    grid-area: aside;
+    margin-top: 35px;
+    width: 195px;
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+p {
+    color: #F2D3D0;
+}
+nav {
+    display: flex;
+    font-style: italic;
+    font-size: 18px;
+}
+a {
+    color: #F2D3D0;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.man {
+    height: 50px;
+    margin-top: 10px;
+}
+.form-container {
+    background-color: #222020;
+    border-radius: 10px;
+    color: #F2D3D0;
+    padding: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 16px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #218838;
+    transition: 1s;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+table {
+    width: 350px;
+    border: 1px solid none;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: #222020;
+    margin-left: 416px;
+}
+caption {
+    font-weight: 500;
+    font-size: 21px;
+}
+th, td {
+    border: 1px solid #0D0D0D;
+}
+.hobby {
+    font-weight: 800;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p {
+    font-weight: 400;
+}
